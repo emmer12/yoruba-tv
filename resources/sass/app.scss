@@ -12,3 +12,23 @@
         @apply text-4xl font-bold tracking-tighter;
     }
 }
+
+.blog-card-display {
+    img {
+        @apply h-full w-full;
+    }
+}
+
+footer {
+    background: #0e0e0e;
+    color: #fff;
+    .footer-bg {
+        background-image: url(/images/bg-black.png);
+        background-position: center center;
+        background-size: cover;
+
+        .footer-inner {
+            padding: 50px 0px;
+        }
+    }
+}

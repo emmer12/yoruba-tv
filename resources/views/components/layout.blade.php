@@ -8,14 +8,19 @@
     <title>Youruba - Nation Tv</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="/css/app.css" />
-
+    <script src="{{ asset('js/gsap.min.js') }}"></script>
+    <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('js/EasePack.min.js') }}"></script>
 </head>
 
 <body class="">
     <main>
         <x-nav />
         {{ $slot }}
+
+        <x-footer />
     </main>
+
 </body>
 
 </html>

@@ -27,9 +27,10 @@ class HomeController extends Controller
     public function index()
     {
         $posts = BinshopsPostTranslation::join('binshops_posts', 'binshops_post_translations.post_id', '=', 'binshops_posts.id')
+            ->with("post.categories")
             ->where("is_published", '=', true)
             ->where('posted_at', '<', Carbon::now()->format('Y-m-d H:i:s'))
-            ->orderBy("posted_at", "desc")->limit(5)->get();
+            ->orderBy("posted_at", "desc")->limit(4)->get();
 
         return view('welcome', [
             'posts' => $posts
