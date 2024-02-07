@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\{HomeController, PageController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +18,9 @@ Route::get('/', [HomeController::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/about-us', [App\Http\Controllers\PageController::class, 'about'])->name('about');
+Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('gallery');
+Route::get('/our-mission', [App\Http\Controllers\PageController::class, 'mission'])->name('mission');
+Route::get('/forum', [App\Http\Controllers\PageController::class, 'forum'])->name('forum');
+Route::get('/contact-us', [App\Http\Controllers\PageController::class, 'contact'])->name('contact');
+Route::get('/donate', [App\Http\Controllers\PageController::class, 'donate'])->name('donate');

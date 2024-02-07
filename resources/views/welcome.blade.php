@@ -2,14 +2,14 @@
     <section>
         <div class="container-x">
             <div class="flex flex-col sm:flex-row">
-                <div class="left flex-1 py-14 pr-10">
-                    <h2 class="tracking-tighter text-[32px] font-bold">Welcome to <span
+                <div class="left flex-1 py-14 pr-10 ">
+                    <h2 class="tracking-tighter text-[28px] sm:text-[32px] font-bold">Welcome to <span
                             class="
                         bg-gradient-to-r from-blue-600 via-[#d6ac03] to-indigo-400 inline-block text-transparent bg-clip-text
                         ">Youruba
                             Nation</span> TV
                     </h2>
-                    <h2 class="tracking-tight text-[32px] font-bold text-gray-500"> Your Premier
+                    <h2 class="tracking-tight text-[20px] sm:text-[32px]  font-bold text-gray-500"> Your Premier
                         Destination
                         for
                         Captivating Entertainment
@@ -39,7 +39,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex-1 w-1/2">
+                <div class="flex-1 w-full sm:w-1/2 hidden sm:block ">
                     <div class="absolute top-0">
                         <img src={{ asset('images/hero-image.png') }} alt="Hero Image">
                     </div>
@@ -51,7 +51,7 @@
     {{-- Letest News --}}
 
 
-    <section class="bg-white mt-[100px] py-6">
+    <section class="bg-white mt-[50px] sm:mt-[100px] py-6">
         <div class="container-x">
             <div class="header mb-6">
                 <h2>Latest news</h2>

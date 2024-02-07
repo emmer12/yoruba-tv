@@ -78,4 +78,22 @@
     .animated-icon1 span {
         @apply bg-gray-600
     }
+
+    .animated-icon1.open span:nth-child(1) {
+        top: 2px;
+    }
+
+    .animated-icon1.open span:nth-child(2) {
+        top: 8px;
+    }
+
+    .banner {
+        padding: 40px 0px 40px 0px;
+        background-color: #fff;
+        background-image: url(/images/bg-banner.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
 }

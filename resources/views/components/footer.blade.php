@@ -2,7 +2,7 @@
 
     <div id="footer-wave"></div>
 
-    <div class="footer-bg">
+    <div class="footer-bg px-6 sm:px-0">
 
         <div class="footer-inner container-x ">
 
@@ -35,7 +35,7 @@
                             <div class="widget-content">
                                 <h4 class="text-sm">Contact Us</h4>
                                 <div class="textwidget text-sm my-4 font-light ">
-                                    <p class="text-sm my-4 font-light">202 Helga Springs Rd, Uk</p>
+                                    <p class="text-sm my-4 font-light">202 Helga Springs Rd, Ng</p>
                                     <p>Call Us: <strong><a href="tel:800.275.8777">90094764732</a></strong></p>
                                     <p><a href="mailto:alex@company.com">emmer@company.com</a></p>
                                 </div>
