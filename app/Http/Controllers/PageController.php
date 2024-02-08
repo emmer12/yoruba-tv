@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use BinshopsBlog\Models\BinshopsUploadedPhoto;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -33,6 +34,10 @@ class PageController extends Controller
 
     public function gallery()
     {
-        return view('pages.gallery');
+        $images = BinshopsUploadedPhoto::where('source', 'ImageUpload')->orderBy('created_at', 'desc')->get();
+
+        return view('pages.gallery', [
+            'images' => $images
+        ]);
     }
 }

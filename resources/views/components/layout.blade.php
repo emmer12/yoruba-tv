@@ -23,6 +23,22 @@
         <x-footer />
     </main>
 
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+
+        gsap.utils.toArray(".fadeIn").forEach((section, i) => {
+            gsap.from(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top center",
+                },
+                delay: i * 0.5,
+                autoAlpha: 0
+            });
+        });
+    </script>
+
 </body>
 
 </html>
