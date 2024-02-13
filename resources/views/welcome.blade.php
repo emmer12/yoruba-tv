@@ -72,6 +72,23 @@
         </div>
     </section>
 
+
+    {{--  --}}
+
+
+    <section class="wealth-section">
+        <div class="container-x">
+            <div class="sm:max-w-[630px] w-full m-auto">
+                <h2 class="text-4xl font-bold mb-4 fadeIn">Wealth of the nation</h2>
+                <p class="text-base font-light fadeIn">The true wealth of a nation lies not just in its abundance of
+                    resources,
+                    but in the
+                    equitable distribution of opportunities, the strength of its institutions, and the well-being of its
+                    people.</p>
+            </div>
+        </div>
+    </section>
+
 </x-layout>
 
 

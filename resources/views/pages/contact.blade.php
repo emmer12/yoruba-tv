@@ -5,8 +5,8 @@
 
     <section class="my-[50px]">
         <div class="container-x">
-            <div class="flex gap-[50px]">
-                <div class="card fadeIn w-1/2 bg-gray-50 rounded-xl p-4">
+            <div class="flex flex-col sm:flex-row gap-[50px]">
+                <div class="card sm:w-1/2 w-full bg-gray-50 rounded-xl p-4">
                     <h4 class="text-lg mb-2 font-semibold text-gray-900">Head office</h4>
                     <ul class="my-3 flex flex-col gap-3">
                         <li class="elementor-icon-list-item">
@@ -61,25 +61,44 @@
                     </ul>
                 </div>
 
-                <div class="card fadeIn w-1/2 bg-gray-50 rounded-xl p-4">
+                <div class="card  sm:w-1/2 w-full bg-gray-50 rounded-xl p-4">
                     <h4 class="text-lg mb-2 font-semibold text-gray-900">Send us a message</h4>
 
 
-                    <form action="">
+                    <form method="POST" action="{{ route('contact') }}">
+                        @csrf
+
+                        @if (Session::has('message'))
+                            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">
+                                {{ Session::get('message') }}</p>
+                        @endif
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         <div class="field my-2">
                             <label for="name">Your Name</label>
-                            <input name="name" type="text" class="form-control" />
+                            <input name="name" id="name" type="text" class="form-control" />
                         </div>
 
                         <div class="field  my-2">
                             <label for="email">Your Email Address</label>
-                            <input name="email" type="text" class="form-control" />
+                            <input name="email" id="email" type="text" class="form-control" />
                         </div>
 
                         <div class="field  my-2">
-                            <label for="email">Your Message</label>
-                            <textarea name="name" rows="3" class="form-control"></textarea>
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" rows="3" class="form-control"></textarea>
                         </div>
+
+                        <button class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>

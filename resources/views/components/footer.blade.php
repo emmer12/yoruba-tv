@@ -4,7 +4,7 @@
 
     <div class="footer-bg px-6 sm:px-0">
 
-        <div class="footer-inner container-x ">
+        <div class="footer-inner container-x m-auto">
 
 
             <div class="footer-top">
@@ -56,6 +56,10 @@
                                     <li class="my-1">
                                         <a class="hover:pl-1 transition-all  hover:text-primary" href="">Live
                                             Radio</a>
+                                    </li>
+                                    <li class="my-1">
+                                        <a class="hover:pl-1 transition-all  hover:text-primary"
+                                            href="/donate">Donate</a>
                                     </li>
                                     <li class="my-1">
                                         <a class="hover:pl-1 transition-all  hover:text-primary"

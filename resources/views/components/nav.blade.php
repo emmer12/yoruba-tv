@@ -46,7 +46,9 @@
                 </li>
             </ul>
         </div>
-        <button class="btn primary sm:flex hidden">Become a member</button>
+        <a href="{{ route('registration') }}" class="btn primary sm:flex hidden"
+            >Become a member</a
+        >
         <div class="block sm:hidden"></div>
 
         <div class="sm:hidden block">

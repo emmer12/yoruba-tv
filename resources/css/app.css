@@ -97,6 +97,25 @@
         height: 200px;
     }
 
+    .wealth-section {
+        height: 400px;
+        background-color: #030303;
+        color: #fff;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(0deg, black, #03113575),
+            url(/images/bg-1.jpg);
+
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+
+
 
     /* .gallery {
         display: grid;
