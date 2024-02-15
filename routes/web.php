@@ -26,3 +26,4 @@ Route::match(['post', 'get'], '/contact-us', [App\Http\Controllers\PageControlle
 Route::get('/donate', [App\Http\Controllers\PageController::class, 'donate'])->name('donate');
 Route::match(['post', 'get'], '/ylf-registration', [App\Http\Controllers\PageController::class, 'registration'])->name('registration');
 Route::get('/ylf-success', [App\Http\Controllers\PageController::class, 'ylf_success'])->name('ylf-success');
+Route::get('/blog_admin/ylf-members', [App\Http\Controllers\PageController::class, 'ylf_members'])->name('ylf-members');

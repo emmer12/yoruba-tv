@@ -100,6 +100,7 @@ class PageController extends Controller
             $user->sex = $request->sex;
             $user->email = $request->email;
             $user->other_name = $request->other_name;
+            $user->surname = $request->surname;
             $user->madian_name = $request->madian_name;
             $user->marital_status = $request->marital_status;
             $user->religion = $request->religion;
@@ -124,5 +125,20 @@ class PageController extends Controller
     public function ylf_success()
     {
         return view('pages.ylf-success');
+    }
+
+
+    public function ylf_members()
+    {
+        $title = 'Blog Page'; // default title...
+
+        $users = YlfUser::all();
+
+        return view('pages.ylf-members', [
+            'locale' => 'en',
+            'title' => $title,
+            'users' => $users
+
+        ]);
     }
 }

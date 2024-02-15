@@ -25,6 +25,16 @@
         </div>
     </li>
 
+    <li class="list-group-item list-group-color  justify-content-between lh-condensed">
+        <div class="list-group ">
+            <a href='{{ route('ylf-members') }}'
+                class='list-group-item list-group-color list-group-item list-group-color-action  @if (\Request::route()->getName() === 'ylf-members') active @endif  '><i
+                    class="fa fa-user fa-fw" aria-hidden="true"></i>
+                YLF Member
+            </a>
+        </div>
+    </li>
+
 
     <li class="list-group-item list-group-color justify-content-between lh-condensed">
         <div>
@@ -86,7 +96,7 @@
     </li>
 
 
-    <li class="list-group-item list-group-color  justify-content-between lh-condensed">
+    {{-- <li class="list-group-item list-group-color  justify-content-between lh-condensed">
         <div>
             <h6 class="my-0"><a href="{{ route('binshopsblog.admin.images.upload') }}">Languages</a></h6>
 
@@ -103,7 +113,7 @@
                     Add new Language</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
 
     @if (config('binshopsblog.image_upload_enabled'))
