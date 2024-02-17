@@ -63,14 +63,16 @@
                                     </li>
                                     <li class="my-1">
                                         <a class="hover:pl-1 transition-all  hover:text-primary"
-                                            href="">Contact</a>
+                                            href="{{ route('contact') }}">Contact</a>
                                     </li>
                                     <li class="my-1">
-                                        <a class="hover:pl-1 transition-all  hover:text-primary" href="">About
+                                        <a class="hover:pl-1 transition-all  hover:text-primary"
+                                            href="{{ route('about') }}">About
                                             us</a>
                                     </li>
                                     <li class="my-1">
-                                        <a class="hover:pl-1 transition-all  hover:text-primary" href="">Join
+                                        <a class="hover:pl-1 transition-all  hover:text-primary"
+                                            href="{{ route('registration') }}">Join
                                             Our
                                             Forum</a>
                                     </li>
