@@ -27,3 +27,6 @@ Route::get('/donate', [App\Http\Controllers\PageController::class, 'donate'])->n
 Route::match(['post', 'get'], '/ylf-registration', [App\Http\Controllers\PageController::class, 'registration'])->name('registration');
 Route::get('/ylf-success', [App\Http\Controllers\PageController::class, 'ylf_success'])->name('ylf-success');
 Route::get('/blog_admin/ylf-members', [App\Http\Controllers\PageController::class, 'ylf_members'])->name('ylf-members');
+Route::get('/live-tv', [App\Http\Controllers\PageController::class, 'live_tv'])->name('live-tv');
+Route::get('/live-radio', [App\Http\Controllers\PageController::class, 'live_radio'])->name('live-radio');
+Route::get('/radio-embed', [App\Http\Controllers\PageController::class, 'embedded_radio'])->name('radio-embed');

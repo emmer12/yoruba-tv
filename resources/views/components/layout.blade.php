@@ -7,7 +7,7 @@
 
     <title>Youruba - Nation Tv</title>
     <!-- Fonts -->
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=') . time() }}" />
     <script src="{{ asset('js/gsap.min.js') }}"></script>
     <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('js/EasePack.min.js') }}"></script>

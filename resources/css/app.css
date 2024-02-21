@@ -114,6 +114,15 @@
     }
 
 
+    .radio-container {
+
+        background-image: linear-gradient(rgb(255 255 255), rgb(255 255 255 / 51%)),
+            url(/images/radio-bg.jpeg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+
 
 
 

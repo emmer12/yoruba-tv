@@ -3,9 +3,9 @@
         <x-banner title="About us" subtitle="Who we are"></x-banner>
     </div>
 
-    <section class="py-[100px] fadeIn">
+    <section class="sm:py-[100px] py-[50px] fadeIn">
         <div class="container-x">
-            <div class="flex gap-x-[60px] items-center ">
+            <div class="flex flex-col-reverse sm:flex-row gap-x-[60px] gap-y-5 items-center ">
                 <div class="display w-full sm:w-1/2  rounded-3xl overflow-clip ">
                     <img src="{{ asset('images/img1.jpeg') }}" />
                 </div>
@@ -19,16 +19,16 @@
                         entertains, informs, and inspires.
                     </p>
 
-                    <button class="btn btn-primary mt-3">
+                    <a href="{{ route('contact') }}" class="btn primary mt-3">
                         Contact Us
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="py-[100px] fadeIn">
+    <section class="sm:py-[100px] py-[50px] fadeIn">
         <div class="container-x">
             <div class="sm:w-[600px] m-auto text-center">
                 <h4 class="text-sm sm:text-base font-semibold tracking-tight  text-primary uppercase mb-2">

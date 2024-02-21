@@ -2,7 +2,7 @@
 
     <section class="my-[50px]">
         <div class="container-x">
-            <div class="card fadeIn  sm:w-1/2 w-full bg-gray-50 rounded-xl p-4 m-auto">
+            <div class="card fadeIn sm:w-1/2 w-full bg-gray-50 rounded-xl p-4 m-auto">
                 <div class="mb-2">
                     <h4 class="text-lg  font-semibold text-gray-900">Yoruba Ledership forum</h4>
                     <p>Membership application form</p>
@@ -21,7 +21,7 @@
                         </div>
                     @endif
 
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
                         <div class="field my-2">
                             <label for="surname">Surname</label>
                             <input name="surname" id="surname" value="{{ old('surname') }}" type="text"
@@ -39,7 +39,7 @@
                         <input name="madian_name" id="madian_name" value="{{ old('madian_name') }}" type="text"
                             class="form-control  @error('madian_name') is-invalid @enderror" />
                     </div>
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
                         <div class="field my-2">
                             <label for="sex">Sex</label>
                             <select name="sex" class="form-select @error('sex') is-invalid @enderror"">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
                         <div class="field my-2">
                             <label for="religion">Religion</label>
                             <input name="religion" value="{{ old('religion') }}" type="text" class="form-control" />
@@ -71,7 +71,7 @@
                                 class="form-control" />
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
                         <div class="field my-2">
                             <label for="home_town">Home Town</label>
                             <input name="home_town" type="text" value="{{ old('home_town') }}"
@@ -90,7 +90,7 @@
                         <textarea name="home_address" class="form-control" value="{{ old('home_address') }}"></textarea>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
                         <div class="field my-2">
                             <label for="tel_no">Telephone Number</label>
                             <input name="tel_no" value="{{ old('tel_no') }}" id="tel_no" type="tel"

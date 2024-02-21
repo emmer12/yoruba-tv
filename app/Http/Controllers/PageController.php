@@ -132,7 +132,7 @@ class PageController extends Controller
     {
         $title = 'Blog Page'; // default title...
 
-        $users = YlfUser::all();
+        $users = YlfUser::orderBy('created_at', "desc")->get();
 
         return view('pages.ylf-members', [
             'locale' => 'en',
@@ -140,5 +140,21 @@ class PageController extends Controller
             'users' => $users
 
         ]);
+    }
+
+    public function live_tv()
+    {
+        return view('pages.live-tv');
+    }
+
+
+    public function live_radio()
+    {
+        return view('pages.live-radio');
+    }
+
+    public function embedded_radio()
+    {
+        return view('pages.embeded-radio');
     }
 }

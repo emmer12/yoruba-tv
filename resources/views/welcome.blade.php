@@ -23,7 +23,7 @@
                         delivering the finest in television programming.</p>
 
                     <div class="action">
-                        <button class="btn btn-primary flex gap-2">
+                        <a href="{{ route('live-tv') }}" class="btn primary inline-flex gap-2">
                             Watch Live Tv
 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -36,7 +36,7 @@
                                     fill="#fff" />
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="flex-1 w-full sm:w-1/2 hidden sm:block ">

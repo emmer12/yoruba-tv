@@ -4,7 +4,12 @@
             ><span></span><span></span
         ></span>
         <div class="logo h-[70px] w-[70px]">
-            <img class="h-full w-full" src="{{ asset('images/logo.png') }}" />
+            <a href="/">
+                <img
+                    class="h-full w-full"
+                    src="{{ asset('images/logo.png') }}"
+                />
+            </a>
         </div>
 
         <div class="sm:flex hidden">
@@ -12,14 +17,14 @@
                 <li>
                     <a
                         class="font-semibold text-black px-2 live relative hover:text-primary transition"
-                        href=""
+                        href="{{ route('live-tv') }}"
                         >Live TV</a
                     >
                 </li>
                 <li>
                     <a
                         class="font-semibold text-black px-2 hover:text-primary transition"
-                        href=""
+                        href="{{ route('live-radio') }}"
                         >Live Radio
                     </a>
                 </li>
@@ -50,49 +55,51 @@
             >Become a member</a
         >
         <div class="block sm:hidden"></div>
-
-        <div class="sm:hidden block">
-            <div
-                class="mobile-menu absolute top-[78px] w-[90%] rounded-2xl p-4"
-            >
-                <ul class="flex flex-col gap-4 mobile">
-                    <li>
-                        <a
-                            class="font-semibold text-black px-2 live relative hover:text-primary transition"
-                            href=""
-                            >Live TV</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="font-semibold text-black px-2 hover:text-primary transition"
-                            href=""
-                            >Live Radio
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="font-semibold text-black px-2 hover:text-primary transition"
-                            href=""
-                            >About
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="font-semibold text-black px-2 hover:text-primary transition"
-                            href=""
-                            >Gallery
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            class="font-semibold text-black px-2 hover:text-primary transition"
-                            href=""
-                            >Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    </div>
+    <div class="sm:hidden block">
+        <div class="mobile-menu absolute top-[78px] w-[90%] rounded-2xl p-4">
+            <ul class="flex flex-col gap-4 mobile">
+                <li>
+                    <a
+                        class="font-semibold text-black px-2 live relative hover:text-primary transition"
+                        href="{{ route('live-tv') }}"
+                        >Live TV</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="font-semibold text-black px-2 hover:text-primary transition"
+                        href="{{ route('live-radio') }}"
+                        >Live Radio
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="font-semibold text-black px-2 hover:text-primary transition"
+                        href="{{ route('about') }}"
+                        >About
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="font-semibold text-black px-2 hover:text-primary transition"
+                        href="{{ route('gallery') }}"
+                        >Gallery
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="font-semibold text-black px-2 hover:text-primary transition"
+                        href="{{ route('contact') }}"
+                        >Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('registration') }}" class="btn primary"
+                        >Become a member</a
+                    >
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

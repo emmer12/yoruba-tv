@@ -26,6 +26,7 @@ footer {
         background-image: url(/images/bg-black.png);
         background-position: center center;
         background-size: cover;
+        filter: invert(1);
 
         .footer-inner {
             padding-top: 50px;

@@ -98,7 +98,7 @@
                             <textarea name="message" id="message" rows="3" class="form-control"></textarea>
                         </div>
 
-                        <button class="btn btn-primary">Submit</button>
+                        <button class="btn primary my-2">Submit</button>
                     </form>
                 </div>
             </div>
